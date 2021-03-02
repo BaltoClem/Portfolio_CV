@@ -826,6 +826,7 @@ img{
     flex:0 0 100%;
     max-width: 100%;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .portfolio-section .filter-item{
@@ -847,4 +848,8 @@ img{
 
 .portfolio-section .filter-item.active{
     color: var(--skin-color);
+}
+
+.portfolio-section .portfolio-item{
+    flex:0 0 33.33%;
 }
