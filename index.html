@@ -13,6 +13,20 @@
 
     <!--  Default color skin  -->
     <link rel="stylesheet" type="text/css" href="css/skins/color-1.css">
+
+    <!-- Style Switcher - for demo purposes only -->
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-1" href="css/skins/color-1.css"
+          disabled>
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-2" href="css/skins/color-2.css"
+          disabled>
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-3" href="css/skins/color-3.css"
+          disabled>
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-4" href="css/skins/color-4.css"
+          disabled>
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-5" href="css/skins/color-5.css"
+          disabled>
+
+    <link rel="stylesheet" type="text/css" href="css/style-switcher.css">
 </head>
 <body>
 
@@ -130,7 +144,7 @@
                     <p>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum.</p>
                 <a href="CV.pdf" class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
-                <a href="#" class="link-item btn-1 outer-shadow hover-in-shadow">Hire me</a>
+                <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Hire me</a>
             </div>
         </div>
 <!----------------------------------------------- About tabs start ---------------------------------------------------->
@@ -886,8 +900,32 @@
 
 <!--------------------------------------------- Portfolio popup End---------------------------------------------------->
 
-<!-- Main js -->
+<!-- Style switcher start - for demo purposes only -->
+
+<div class="style-switcher outer-shadow">
+    <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon outer-shadow hover-in-shadow">
+        <i class="fas fa-moon"></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+</div>
+
+<!-- Style switcher end -->
+
+<!-- Main JS -->
 <script src="js/main.js"></script>
+
+<!-- Style Switcher JS -->
+<script src="js/style-switcher.js"></script>
 
 </body>
 </html>
