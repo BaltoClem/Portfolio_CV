@@ -19,14 +19,24 @@ window.addEventListener("scroll", () =>{
 const alternateStyles = document.querySelectorAll(".alternate-style");
 
 function setActiveStyle(color) {
+    localStorage.setItem("color", color);
+    changeColor();
+}
+
+function changeColor(){
     alternateStyles.forEach((style) =>{
-        if(color === style.getAttribute("title")){
+        if(localStorage.getItem("color") === style.getAttribute("title")){
             style.removeAttribute("disabled");
         }
         else{
-            style.setAttribute("disabled", "true");
+            style.setAttribute("disabled","true");
         }
     })
+}
+
+// Checking if 'color' key exists
+if(localStorage.getItem("color") !== null){
+    changeColor();
 }
 
 /*---------------------------------------------- Theme Light and Dark mode -------------------------------------------*/
